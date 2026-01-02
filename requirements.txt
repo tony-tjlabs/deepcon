@@ -1,0 +1,41 @@
+# IRFM DeepCon Dashboard - Python Dependencies
+# SK Hynix Y1 Cluster IRFM System
+
+# Core Web Framework
+streamlit>=1.28.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+
+# Visualization
+plotly>=5.17.0
+
+# Machine Learning / Deep Learning
+torch>=2.0.0
+scikit-learn>=1.3.0
+
+# Geospatial
+shapely>=2.0.0
+
+# Performance & Utilities
+tqdm>=4.65.0
+joblib>=1.3.0
+
+# Date/Time
+python-dateutil>=2.8.0
+
+# File I/O
+pyarrow>=12.0.0  # For parquet files
+
+# Production (Deployment)
+python-dotenv>=1.0.0  # Environment variable management
+gunicorn>=21.2.0  # WSGI server (optional, for non-Streamlit deployments)
+
+# Optional: Development & Testing
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.5.0

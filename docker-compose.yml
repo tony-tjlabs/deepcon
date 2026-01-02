@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  deepcon:
+    build: .
+    container_name: deepcon-dashboard
+    ports:
+      - "8501:8501"
+    environment:
+      - APP_ENV=production
+      - APP_PASSWORD=${APP_PASSWORD:-admin}
+      - CACHE_TTL=3600
+      - LOG_LEVEL=INFO
+    volumes:
+      # Cache 디렉토리 마운트 (데이터 영속성)
+      - ./Cache:/app/Cache
+      # Data 디렉토리 마운트
+      - ./Datafile:/app/Datafile
+      # Logs 디렉토리 마운트
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - deepcon-network
+
+networks:
+  deepcon-network:
+    driver: bridge
