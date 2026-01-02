@@ -1,0 +1,40 @@
+{
+  "date": "20251213",
+  "created_at": "2025-12-27T15:26:13.437723",
+  "cache_version": "3.0",
+  "t31": {
+    "total_devices": 3,
+    "total_records": 32,
+    "work_hour_devices": 0,
+    "work_hour_rate": 0.0,
+    "max_concurrent": 2,
+    "avg_concurrent": 1.103448275862069
+  },
+  "t41": {
+    "total_workers": 2510,
+    "total_records": 94094,
+    "primary_active": 329,
+    "primary_inactive": 2181,
+    "max_active": 258,
+    "avg_active": 197.58,
+    "avg_dwell_minutes": 187.4382470119522,
+    "active_workers": 418,
+    "unused_tags": 2092,
+    "unused_full_day": 0,
+    "unused_partial": 2092,
+    "unused_avg_time_slots": 38.503346080305924
+  },
+  "mobile": {
+    "total_devices": 6930,
+    "android_devices": 6323,
+    "iphone_devices": 607,
+    "total_records": 11568,
+    "max_concurrent": 305,
+    "avg_concurrent": 231.36
+  },
+  "time_range": {
+    "min_time_index": 1,
+    "max_time_index": 50,
+    "total_bins": 50
+  }
+}

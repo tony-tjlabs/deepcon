@@ -6,9 +6,6 @@
 # Data Files (Large datasets - should not be in Git)
 # ============================================================================
 Datafile/
-Cache/
-Cache_backup/
-DeepCon_Cache/
 
 # ============================================================================
 # Temporary Files
